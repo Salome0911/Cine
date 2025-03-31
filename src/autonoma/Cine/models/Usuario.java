@@ -6,19 +6,18 @@ package autonoma.Cine.models;
 
 /**
  *
- * @author Estudiante
+ * @author Salo
  */
-public class Funcion {
-    private Pelicula pelicula;
+public class Usuario {
+    private String tipo;
     private double descuento;
 
-    public Funcion(Pelicula pelicula, double descuento) {
-        this.pelicula = pelicula;
+    public Usuario(String tipo, double descuento) {
+        this.tipo = tipo;
         this.descuento = descuento;
     }
 
-    // Calcula el precio de la función aplicando el descuento
-    public double getPrecio() {
-        return pelicula.getCostoBase() * (1 - descuento);
+    public double getDescuento() {
+        return descuento;
     }
 }
