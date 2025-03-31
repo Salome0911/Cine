@@ -6,9 +6,16 @@ package autonoma.Cine.models;
 
 
 public class Pelicula {
+        private String titulo;
+    private double costoBase;
 
-    double getCostoBase() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public Pelicula(String titulo, double costoBase) {
+        this.titulo = titulo;
+        this.costoBase = costoBase;
+    }
+
+    public double getCostoBase() {
+        return costoBase;
     }
     
 }
