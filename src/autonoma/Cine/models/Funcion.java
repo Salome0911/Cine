@@ -2,8 +2,8 @@
 package autonoma.Cine.models;
 
 public class Funcion {
-     private Pelicula pelicula;
-    private double descuento;
+     private final Pelicula pelicula;
+    private final double descuento;
 
     public Funcion(Pelicula pelicula, double descuento) {
         this.pelicula = pelicula;
